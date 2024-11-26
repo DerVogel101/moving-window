@@ -99,7 +99,7 @@ def towards_zero(xy: tuple[int, int], step_multiplicator: float = 1, zero_random
 
 class Mywin(wx.Frame):
     def __init__(self, parent, title):
-        super(Mywin, self).__init__(parent, title=title, size=(300, 300), style=wx.BORDER_NONE)
+        super(Mywin, self).__init__(parent, title=title, size=(300, 300), style=wx.BORDER_NONE | wx.FRAME_NO_TASKBAR | wx.STAY_ON_TOP)
         self.DIMENSION = (300, 300)
         self.clicked = False
         print(os.getcwd())
